@@ -1,0 +1,19 @@
+Flash-Long License and Upstream Attribution
+
+This repository integrates high-performance refactored implementations of two
+open-source long-read RNA-seq transcriptomics tools:
+
+1. Flash-Bambu (engines/flash-bambu/)
+   - Derived from Bioconductor bambu (Chen et al., Nature Methods 2023).
+   - Licensed under the GNU General Public License v3.0 (GPL-3.0).
+
+2. Flash-IsoQuant (engines/flash-isoquant/)
+   - Derived from IsoQuant (Prjibelski et al., Nature Biotechnology 2023).
+   - Licensed under the GNU General Public License v2.0 or later (GPL-2.0-or-later).
+
+The combined Flash-Long repository and original refactoring, C++17/Cython
+engines, Flat-CSR indexing, documentation, and benchmark tooling are
+distributed under the GNU General Public License v3.0 (GPL-3.0).
+
+For the full license text, see:
+https://www.gnu.org/licenses/gpl-3.0.en.html

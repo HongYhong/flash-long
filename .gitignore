@@ -1,0 +1,23 @@
+# Python / Cython build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+engines/flash-isoquant/src/**/_cy_*.c
+
+# R / C++ build artifacts
+*.o
+*.dll
+.r_lib/
+.Rhistory
+.RData
+.Rproj.user/
+
+# Temporary / benchmark scratch
+tmp_bench/
+*.tmp
+.DS_Store

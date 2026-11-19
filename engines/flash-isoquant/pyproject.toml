@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64", "wheel", "Cython>=3.0", "numpy>=1.24"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isoquant-next"
+version = "0.1.0"
+description = "Low-memory, high-throughput refactored IsoQuant pipeline with mmap CSR index and Cython nogil kernels"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "pysam>=0.22",
+    "polars>=0.20",
+    "pyarrow>=14.0",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+isoquant-next = "isoquant_next.cli.main:main"
+isoquant-next-detect-barcodes = "isoquant_next.cli.detect_barcodes:main"
+isoquant-next-visualize = "isoquant_next.cli.visualize:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+isoquant_next = ["data/*.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

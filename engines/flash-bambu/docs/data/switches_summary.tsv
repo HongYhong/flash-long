@@ -1,0 +1,8 @@
+switch	case_id	ref_core_s	cand_core_s	core_speedup	ref_exp_s	cand_exp_s	ref_pss_gib	cand_pss_gib	pass	gtf_identical	tx_max_diff
+low_memory	human_400_lowmem_switch	478.886	64.193	7.4601	15.323	4.757	3.2609	1.8359	True	True	0
+stranded	human_400_switches	135.761	12.348	10.9946	15.232	4.925	3.3887	1.7012	True	True	0
+track_reads	human_400_switches	148.163	13.719	10.7998	17.671	4.881	3.4137	1.7994	True	True	0
+return_dist	human_400_switches	142.634	15.274	9.3384	14.891	4.954	3.2767	1.8778	True	True	0
+fusion_mode	human_400_switches	136.944	13.255	10.3315	15.78	5.132	3.2615	1.7409	True	True	0
+ndr01	human_400_switches	154.466	12.45	12.4069	15.575	4.88	3.3683	1.7827	True	True	0
+nofit	human_400_switches	137.156	11.903	11.5228	14.701	4.792	3.141	1.7067	True	True	0

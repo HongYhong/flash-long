@@ -1,0 +1,51 @@
+Package: bambu
+Type: Package
+Title: Context-Aware Transcript Quantification from Long Read RNA-Seq data (bambu_next)
+Version: 3.13.99
+Authors@R: c(person("Ying", "Chen", role = c("cre","aut"),
+             email = "chen_ying@gis.a-star.edu.sg"),
+             person("Andre", "Sim", role = "aut",
+             email = "andre_sim@gis.a-star.edu.sg"),
+             person("Yuk Kei", "Wan", role = "aut",
+             email = "Wan_Yuk_Kei@gis.a-star.edu.sg"),
+             person("Jonathan", "Goeke", role = "aut",
+             email = "gokej@gis.a-star.edu.sg"))
+Description: Parallel and low-memory C++17/Rhtslib/Flat-CSR implementation
+    (bambu_next) of bambu for multi-sample transcript discovery and
+    quantification from long-read RNA-Seq data, preserving full Bioconductor
+    SummarizedExperiment and GRangesList compatibility.
+License: GPL-3
+Encoding: UTF-8
+ByteCompile: true
+Depends:
+    R(>= 4.1),
+    SummarizedExperiment(>= 1.1.6),
+    S4Vectors(>= 0.22.1),
+    BSgenome,
+    IRanges
+LinkingTo:
+    Rcpp,
+    RcppArmadillo,
+    Rhtslib,
+    S4Vectors,
+    IRanges,
+    XVector,
+    Biostrings
+Imports:
+    BiocGenerics,
+    BiocFileCache,
+    BiocParallel,
+    data.table,
+    dplyr,
+    tidyr,
+    GenomeInfoDb,
+    GenomicAlignments,
+    GenomicFeatures,
+    GenomicRanges,
+    Seqinfo,
+    stats,
+    Rsamtools,
+    methods,
+    Rcpp,
+    xgboost
+LazyData: true

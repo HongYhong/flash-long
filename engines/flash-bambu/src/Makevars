@@ -1,0 +1,21 @@
+CXX_STD = CXX17
+PKG_CPPFLAGS = $(shell "${R_HOME}/bin/Rscript" -e 'cat(Rhtslib::pkgconfig("PKG_CPPFLAGS"))') -I. -Icommon
+PKG_CXXFLAGS = $(SHLIB_OPENMP_CXXFLAGS) -O3 -pthread
+HTS_LIBS = $(shell "${R_HOME}/bin/Rscript" -e 's <- paste(capture.output(Rhtslib::pkgconfig("PKG_LIBS")), collapse=" "); s <- sub(" -llzma", " -l:liblzma.so.5", s, fixed=TRUE); s <- sub(" -lz", " -l:libz.so.1", s, fixed=TRUE); cat(s)')
+PKG_LIBS = $(HTS_LIBS) $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS) $(SHLIB_OPENMP_CXXFLAGS) -pthread
+
+OBJECTS = s4vectors_stubs.o iranges_stubs.o init.o \
+          common/probe_and_pool.o \
+          annotation/gtf_and_csr_builder.o \
+          stage1/bam_exon_extractor.o \
+          stage1/faidx_motif_lookup.o \
+          stage1/junction_corrector.o \
+          stage1/read_class_builder.o \
+          stage1/rc_scorer_uf.o \
+          stage2/kway_rc_merger.o \
+          stage2/unspliced_cluster_merge.o \
+          stage2/extend_spliced.o \
+          stage3/csr_splice_dist.o \
+          stage3/equirc_builder.o \
+          stage3/em_l1_fused.o \
+          stage4/fast_export.o

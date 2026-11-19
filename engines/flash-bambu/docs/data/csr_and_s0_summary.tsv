@@ -1,0 +1,8 @@
+case_id	sample	cold_s1_s	warm_s1_s	cold_core_s	warm_core_s	cold_pss_gib	warm_pss_gib	ref_s0_s	cand_s0_s	s0_speedup	ref_pss_gib	cand_pss_gib
+g1_csr_ENCFF089AMF	ENCFF089AMF	24.506	24.949	28.084	27.59	2.8816	2.7556					
+g1_csr_ENCFF400BQQ	ENCFF400BQQ	2.5	2.493	6.104	5.146	1.2411	1.2266					
+g1_csr_ENCFF436GKZ	ENCFF436GKZ	8.674	8.247	12.625	10.715	1.7235	1.5792					
+g1_csr_ENCFF598YQO	ENCFF598YQO	23.271	23.265	25.987	26.148	2.3335	2.3467					
+g1_csr_ENCFF846RID	ENCFF846RID	8.701	8.151	12.199	10.797	1.5086	1.4893					
+g1_csr_ENCFF887KHY	ENCFF887KHY	27.983	27.83	31.35	30.428	2.9732	2.9804					
+g1_s0_v46_gtf	gencode.v46.gtf (1.6G)							117.847	8.128	14.4989	4.4454	1.2196
